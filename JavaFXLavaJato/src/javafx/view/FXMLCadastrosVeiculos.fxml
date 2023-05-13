@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.FXMLCadastrosVeiculosController">
+   <children>
+      <SplitPane dividerPositions="0.3979933110367893" layoutX="53.0" layoutY="40.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tableViewVeiculos" layoutX="32.0" layoutY="88.0" prefHeight="398.0" prefWidth="263.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnVeiculoModelo" prefWidth="75.0" text="Modelo" />
+                      <TableColumn fx:id="tableColumnVeiculoPlaca" prefWidth="75.0" text="Placa" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <GridPane layoutX="77.0" layoutY="93.0" prefHeight="359.0" prefWidth="323.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="139.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.59998779296876" minWidth="10.0" prefWidth="183.8" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Código" />
+                        <Label text="Tipo Veículo" GridPane.rowIndex="1" />
+                        <Label text="Modelo" GridPane.rowIndex="3" />
+                        <Label text="Placa" GridPane.rowIndex="2" />
+                        <Label text="Marca" GridPane.rowIndex="4" />
+                        <Label text="Categoria" GridPane.rowIndex="5" />
+                        <Label fx:id="labelVeiculoCodigo" prefHeight="17.0" prefWidth="124.0" GridPane.columnIndex="1" />
+                        <Label fx:id="labelVeiculoTipoVeiculo" prefHeight="17.0" prefWidth="101.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="labelVeiculoPlaca" prefHeight="17.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="labelVeiculoModelo" prefHeight="17.0" prefWidth="65.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="labelVeiculoMarca" prefHeight="17.0" prefWidth="69.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="labelVeiculoCategoria" prefHeight="17.0" prefWidth="64.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                     </children>
+                  </GridPane>
+                  <Group layoutX="202.0" layoutY="489.0" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="31.984375">
+                     <children>
+                        <Button fx:id="buttonInserir" mnemonicParsing="false" onAction="#handleButtonInserir" text="Inserir" />
+                        <Button fx:id="buttonAlterar" layoutX="84.0" mnemonicParsing="false" onAction="#handleButtonAlterar" text="Alterar" />
+                        <Button fx:id="buttonRemover" layoutX="172.0" mnemonicParsing="false" onAction="#handleButtonRemover" text="Remover" />
+                     </children>
+                  </Group>
+                  <Label layoutX="148.0" layoutY="38.0" text="Cadastros de Veículos">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

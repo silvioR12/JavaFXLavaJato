@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.FXMLTelaPrincipalController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="235.0" style="-fx-background-color: #14213d;">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="235.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@AutoBrilho%20(2).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="buttonCadastros" mnemonicParsing="false" onAction="#handleButtonCadastros" prefHeight="84.0" prefWidth="267.0" style="-fx-background-color: #14213d; -fx-border-width: 3px; -fx-border-color: #30405b; -fx-border-style: solid; -fx-border-radius: 20px;" text="Cadastros" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttonProcessos" mnemonicParsing="false" onAction="#handleButtonProcessos" prefHeight="84.0" prefWidth="267.0" style="-fx-background-color: #14213d; -fx-border-width: 3px; -fx-border-color: #30405b; -fx-border-radius: 20px;" text="Processos" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttonGraficos" mnemonicParsing="false" onAction="#handleButtonGraficos" prefHeight="84.0" prefWidth="267.0" style="-fx-background-color: #14213d; -fx-border-width: 3px; -fx-border-color: #30405b; -fx-border-radius: 20px;" text="Gráficos" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttonRelatorios" mnemonicParsing="false" onAction="#handleButtonRelatorios" prefHeight="84.0" prefWidth="267.0" style="-fx-background-color: #14213d; -fx-border-width: 3px; -fx-border-color: #30405b; -fx-border-radius: 20px;" text="Relatórios" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="759.0" />
+   </children>
+</HBox>
